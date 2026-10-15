@@ -1,14 +1,27 @@
-switch (opcion_a_evaluar)
+#include <stdio.h>
+int main()
 {
-case valor1:
-/* Código a ejecutar*/
-break;
-case valor2:
-/* Código a ejecutar*/
-break;
-case valorN:
-/* Código a ejecutar*/
-break;
-default:
-/* Código a ejecutar*/
+    char op = '\0';
+    printf("\tMenú\n\n");
+    printf("Elegir la opción deseada\n");
+    printf("a) Ingresar\n");
+    printf("b) Registrarse\n");
+    printf("c) Salir\n");
+    scanf("%c",&op);
+    switch(op)
+    {
+        default:
+            printf("Opción no válida.\n");
+            break;
+        case 'a':
+            printf("Se seleccionó 'Ingresar'.\n");
+            break;
+        case 'b':
+            printf("Se seleccionó 'Registrarse'.\n");
+            break;
+        case 'c':
+            printf("Se seleccionó 'Salir'.\n");
+            break;
+    }
+    return 0;
 }
